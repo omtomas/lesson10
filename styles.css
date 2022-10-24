@@ -1,0 +1,221 @@
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color:rgba(211, 188, 226, 0.564);
+
+}
+
+.grid{
+    grid-gap:20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 2fr 2fr;
+    grid-template-areas:
+        "header header header"
+        "nav main faq"
+        "contact contact contact"
+        "footer footer footer"
+}
+
+/*header content*/
+
+.header{
+    grid-area:header; 
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size:30px;
+    display:flex;
+    align-items:baseline;
+    border-top-style:none;
+    background-image: url("images/aquarium1.2.jpg");
+    
+   
+}
+
+#adhd{
+    font-size:50px;
+    margin-right:20px;   
+    padding:10px;
+    background-color:rgba(246, 232, 215, 0.502); 
+    text-shadow: 6px 6px rgb(65, 191, 219);
+}
+
+.circle {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(136, 227, 56);
+    border-radius: 50%;
+    margin:20px;
+    margin-right:20px;
+  }
+
+#caption{
+    padding:10px;
+    background-color:rgba(246, 232, 215, 0.502);
+    text-shadow: 6px 6px rgb(65, 191, 219);
+}
+
+
+/*main content*/  
+
+.navigation{
+    grid-area:nav;
+    background-color:rgb(91, 212, 239);
+    
+}
+
+ul{
+    list-style-type:none;
+}
+
+#navlist{
+    height: 60px;
+    width: 110px;
+    background-color: rgb(61, 237, 67);
+    border-radius: 50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#navlist:hover{
+    background-color:rgb(255, 140, 0);
+    cursor:pointer;
+}
+
+
+.main{
+    grid-area:main;
+    background-image:url("images/seastars.jpg");
+    padding:20px;
+
+}
+
+
+#maintitle{
+    background-color:rgba(81, 248, 78, 0.865);
+    padding:10px;
+    border-bottom:2px dotted;
+}
+
+#maintext{
+    background-color:rgba(253, 248, 241, 0.774);
+    padding:10px;
+    font-size:large;
+}
+
+.faq{
+    grid-area:faq;
+    text-align:left;
+    background-color:rgb(91, 212, 239);
+    padding:5px;
+}
+
+#faqtitle{
+    border-bottom:3px dotted;
+}
+
+#faqlist{
+    list-style-type:circle;
+}
+.contact{
+    grid-area:contact;
+    margin-top:0;
+    background-image: url("images/picture1373.jpg");
+    background-repeat: no-repeat;
+    /*background-color:orange;*/
+}
+
+#contact-title{
+    padding-left:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color:rgba(248, 242, 233, 0.699);
+    border-bottom:2px;
+    border-bottom-style:dotted;
+}
+
+.form-container{
+    background-color:rgba(248, 242, 233, 0.699);
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,fr));
+}
+
+form{
+    display:grid;
+
+}
+
+.column1{
+    grid-column:1/2;
+    padding:30px;
+    margin:10px;
+}
+
+.column2{   
+    grid-column:2/3;
+    padding:30px;
+    margin:10px;
+}
+
+.column3{
+    grid-column:3/4;
+    padding:30px;
+    margin:10px;
+}
+
+
+
+#name, #email, #subject{
+    padding:5px;
+    margin:5px;
+}
+
+
+.footer{
+    grid-area:footer;
+    background-color:rgba(211, 188, 226, 0.564);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.map{
+    grid-column:1/2;
+    grid-row:1/3;
+}
+
+
+.email{
+    grid-column:2/3;
+    grid-row:1/2;
+    background-color:rgb(91, 93, 168);
+    text-align:center;
+    padding:55px;
+}
+
+#emaildeco{
+    background-color:rgb(255, 192, 57);
+    padding:25px;
+
+}
+
+.socials{
+    grid-column:2/3;
+    grid-row:2/3;;
+    background-color:rgb(142, 102, 165);
+    text-align:center;
+    padding:55px;
+}
+
+#socialdeco{
+    background-color:rgb(255, 192, 57);
+    padding:25px;
+}
+
+#emaildeco:hover{
+    background-color:rgba(247, 215, 160, 0.511);
+}
+#socialdeco:hover{
+    background-color:rgba(247, 215, 160, 0.511);
+}
